@@ -1,19 +1,20 @@
 /**
-* File : Signal_And_Data_Processing.c
-*
+* File : MatrixOperations.h
+* 
 * Objective of the file:
-* Main file of the project. Start of the program through the main() function.
+* Definitions of elements needed for the Matrix Operations that are implemented in the project.
 *
 * Date of creation: 07/04/2024
 * Last update: 07/04/2024
 *
 * */
 
+#ifndef MAT_OPS
+#define MAT_OPS
+
 /* ========================================================================================== */
 /* Includes. */
-#include <iostream>
-#include <stdlib.h>
-#include "MatrixOperations.h"
+#include "TypeDefs.h"
 
 /* ========================================================================================== */
 /* Defines. */
@@ -27,9 +28,4 @@
 /* ========================================================================================== */
 /* Functions. */
 
-
-// Starting function of the project.
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+#endif // !MAT_OPS

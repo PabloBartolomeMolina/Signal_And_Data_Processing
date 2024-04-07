@@ -139,7 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MatrixOperations.cpp" />
     <ClCompile Include="Signal_And_Data_Processing.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MatrixOperations.h" />
+    <ClInclude Include="TypeDefs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
