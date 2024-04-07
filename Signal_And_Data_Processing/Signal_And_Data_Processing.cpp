@@ -1,5 +1,5 @@
 /**
-* File : Signal_And_Data_Processing.c
+* File : Signal_And_Data_Processing.cpp
 *
 * Objective of the file:
 * Main file of the project. Start of the program through the main() function.
@@ -12,6 +12,7 @@
 /* ========================================================================================== */
 /* Includes. */
 #include <iostream>
+#include <stdint.h>
 #include <stdlib.h>
 #include "MatrixOperations.h"
 
@@ -33,3 +34,5 @@ int main()
 {
     std::cout << "Hello World!\n";
 }
+
+/* EOL of file Signal_And_Data_Processing.cpp */
