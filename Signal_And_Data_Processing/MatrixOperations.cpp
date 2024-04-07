@@ -1,5 +1,5 @@
 /**
-* File : MatrixOperations.c
+* File : MatrixOperations.cpp
 *
 * Objective of the file:
 * Definitions of elements needed for the Matrix Operations that are implemented in the project.
@@ -25,3 +25,11 @@
 
 /* ========================================================================================== */
 /* Functions. */
+GeneralReturn_t MatrixTranspose(uint8_t matInput, uint8_t matOutput, uint8_t rows, uint8_t cols)
+{
+	GeneralReturn_t retVal = MAT_OPS_SUCCESS;
+
+	return retVal;
+}
+
+/* EOL of file MatrixOperations.cpp */
