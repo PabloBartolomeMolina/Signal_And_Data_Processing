@@ -21,10 +21,10 @@
 
 /* ========================================================================================== */
 /* Constants and structs. */
-
+const vector<vector<uint8_t>> matrix(4, vector<uint8_t>(3, 0));
 /* ========================================================================================== */
 /* Variables. */
-
+vector<vector<uint8_t>> outputMatrix(3, vector<uint8_t>(4, 1));
 /* ========================================================================================== */
 /* Functions. */
 
@@ -32,7 +32,7 @@
 // Starting function of the project.
 int main()
 {
-    std::cout << "Hello World!\n";
+    MatrixTranspose(matrix, outputMatrix);
 }
 
 /* EOL of file Signal_And_Data_Processing.cpp */
