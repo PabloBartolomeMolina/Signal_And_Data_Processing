@@ -12,8 +12,16 @@
 #ifndef TYPE_DEFS
 #define TYPE_DEFS
 
-/* Type for returned code from functions to indicate success / error. */
+/* ========================================================================================== */
+/* Defines. */
+#define DEBUG 1		// Used to activate debug printing on console.
+
+/* ========================================================================================== */
+/* Types defined. */
 typedef uint16_t GeneralReturn_t;
+/* Type for returned code from functions to indicate success / error. */
+
+
 
 #endif // !TYPE_DEFS
 
