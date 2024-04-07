@@ -12,4 +12,9 @@
 #ifndef TYPE_DEFS
 #define TYPE_DEFS
 
+/* Type for returned code from functions to indicate success / error. */
+typedef uint16_t GeneralReturn_t;
+
 #endif // !TYPE_DEFS
+
+/* EOL of file TypeDefs.h */
