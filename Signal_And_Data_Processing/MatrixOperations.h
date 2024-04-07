@@ -15,7 +15,12 @@
 /* ========================================================================================== */
 /* Includes. */
 #include <stdint.h>
+#include <vector>
 #include "TypeDefs.h"
+
+/* ========================================================================================== */
+/* Namespaces. */
+using std::vector;
 
 /* ========================================================================================== */
 /* Defines. */
@@ -32,7 +37,7 @@
 
 /* ========================================================================================== */
 /* Functions. */
-extern GeneralReturn_t MatrixTranspose(uint8_t matInput, uint8_t matOutput, uint8_t rows, uint8_t cols);
+extern GeneralReturn_t MatrixTranspose(const vector<vector<uint8_t>>& inputMatrix, vector<vector<uint8_t>>& outputMatrix);
 
 #endif // !MAT_OPS
 

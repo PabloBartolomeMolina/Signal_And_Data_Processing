@@ -15,6 +15,10 @@
 #include "MatrixOperations.h"
 
 /* ========================================================================================== */
+/* Namespaces. */
+using std::vector;
+
+/* ========================================================================================== */
 /* Defines. */
 
 /* ========================================================================================== */
@@ -25,9 +29,44 @@
 
 /* ========================================================================================== */
 /* Functions. */
-GeneralReturn_t MatrixTranspose(uint8_t matInput, uint8_t matOutput, uint8_t rows, uint8_t cols)
+GeneralReturn_t MatrixTranspose(const vector<vector<uint8_t>>& inputMatrix, vector<vector<uint8_t>>& outputMatrix)
 {
 	GeneralReturn_t retVal = MAT_OPS_SUCCESS;
+
+	// Get dimensions of the input matrix.
+	size_t rows = inputMatrix.size();
+    size_t cols = inputMatrix[0].size();
+
+#ifdef DEBUG
+    printf("Size of exit matrix is: %d\n", (outputMatrix.size()));
+    // Print output matrix before transposing it with values of origin (default ones).
+    for (int i = 0; i < outputMatrix.size(); ++i) {
+        for (int j = 0; j < outputMatrix[0].size(); ++j) {
+            printf("%d ", outputMatrix[i][j]);
+        }
+        printf("\n");
+    }
+#endif
+
+    // Resize the output matrix to match transposed dimensions.
+    outputMatrix.resize((size_t)(inputMatrix.size()));
+    // Transpose the matrix.
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            outputMatrix[j][i] = inputMatrix[i][j];
+        }
+     }
+
+#ifdef DEBUG
+    printf("Size of exit matrix is: %d\n", (outputMatrix.size()));
+    // Print output matrix before transposing it with values of origin (default ones).
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            printf("%d ", outputMatrix[j][i]);
+        }
+        printf("\n");
+    }
+#endif
 
 	return retVal;
 }

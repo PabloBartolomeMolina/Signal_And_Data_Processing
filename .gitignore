@@ -32,3 +32,4 @@
 *.app
 /Signal_And_Data_Processing/.vs/Signal_And_Data_Processing/v16
 /Signal_And_Data_Processing/Debug
+/Signal_And_Data_Processing/Release
